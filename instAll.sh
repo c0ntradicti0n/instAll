@@ -24,6 +24,8 @@ make_env CorpusCookApp
 #git clone https://github.com/c0ntradicti0n/Distinctiopus4.git
 git clone https://github.com/c0ntradicti0n/ScienceMap.git
 make_env ScienceMap
+git clone https://github.com/c0ntradicti0n/pdfetc2txt.git
+make_env pdfetc2txt
 git clone https://github.com/c0ntradicti0n/allennlp_vs_ampligraph.git
 make_env allennlp_vs_ampligraph
 
