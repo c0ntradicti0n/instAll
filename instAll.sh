@@ -16,7 +16,7 @@ make_mvn(){
 }
 
 git clone https://github.com/c0ntradicti0n/CorpusCook.git
-make_screen(CorpusCook, make_env(CorpusCook))
+make_screen CorpusCook  (make_env CorpusCook)
 git clone https://github.com/c0ntradicti0n/CorpusCookApp.git
 make_screen(CorpusCookApp, make_env(CorpusCookApp))
 #git clone https://github.com/c0ntradicti0n/Distinctiopus4.git
