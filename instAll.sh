@@ -17,19 +17,19 @@ make_mvn(){
   cd ..
 }
 
-git clone --mirror  git@github.com/c0ntradicti0n/CorpusCook.git
+git clone --mirror  git://github.com/c0ntradicti0n/CorpusCook.git
 make_env CorpusCook
-git clone --mirror  https://github.com/c0ntradicti0n/CorpusCookApp.git
+git clone --mirror  git://github.com/c0ntradicti0n/CorpusCookApp.git
 make_env CorpusCookApp
 #git clone https://github.com/c0ntradicti0n/Distinctiopus4.git
-git clone --mirror  https://github.com/c0ntradicti0n/ScienceMap.git
+git clone --mirror  git://github.com/c0ntradicti0n/ScienceMap.git
 make_env ScienceMap
-git clone --mirror  https://github.com/c0ntradicti0n/allennlp_vs_ampligraph.git
+git clone --mirror  git://github.com/c0ntradicti0n/allennlp_vs_ampligraph.git
 make_env allennlp_vs_ampligraph
 
-git clone --mirror  https://github.com/c0ntradicti0n/view_control_web.git
+git clone --mirror  git://github.com/c0ntradicti0n/view_control_web.git
 make_mvn view_control_web 
-git clone  --mirror https://github.com/c0ntradicti0n/hal.git
+git clone  --mirror git://github.com/c0ntradicti0n/hal.git
 make_mvn hal 
 
 
