@@ -1,8 +1,8 @@
 make_env(){
-  screen -S $1 
   cd $1 
-  python -m venv venv
+  python3 -m venv venv
   pip install -r requirements.txt
+  cd ..
 }
 
 make_screen_session(){
