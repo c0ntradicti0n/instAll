@@ -35,6 +35,8 @@ make_mvn hal
 scp finn@roedel.etrap.eu:init_models/model_first.tar.gz  ./CorpusCook/server/models/
 scp finn@roedel.etrap.eu:init_models/model_over.tar.gz  ./CorpusCook/server/models/
 
+setup_tomcat.sh
+
 
 
 
