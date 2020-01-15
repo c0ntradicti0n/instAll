@@ -2,7 +2,7 @@ make_env(){
   cd $1 
   python3 -m venv venv
   . venv/bin/activate
-  pip install -r requirements.txt
+  pip install -r --process-dependency-links requirements.txt
   deactivate
   cd ..
 }
@@ -32,6 +32,8 @@ make_mvn view_control_web
 git clone https://github.com/c0ntradicti0n/hal.git
 make_mvn hal 
 
+scp finn@roedel.etrap.eu:init_models/model_first.tar.gz  ./CorpusCook/server/models/
+scp finn@roedel.etrap.eu:init_models/model_over.tar.gz  ./CorpusCook/server/models/
 
 
 
