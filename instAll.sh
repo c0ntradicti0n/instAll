@@ -28,9 +28,9 @@ git clone https://github.com/c0ntradicti0n/allennlp_vs_ampligraph.git
 make_env allennlp_vs_ampligraph
 
 git clone https://github.com/c0ntradicti0n/view_control_web.git
-make_mvn(view_control_web)
+make_mvn view_control_web 
 git clone https://github.com/c0ntradicti0n/hal.git
-make_mvn(hal)
+make_mvn hal 
 
 wget http://apache.lauf-forum.at/tomcat/tomcat-9/v9.0.30/bin/apache-tomcat-9.0.30.tar.gz
 tar -xzvf apache-tomcat-9.0.30.tar.gz
