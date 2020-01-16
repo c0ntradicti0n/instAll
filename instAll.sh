@@ -27,8 +27,8 @@ git clone https://github.com/c0ntradicti0n/ScienceMap.git
 make_env ScienceMap
 git clone https://github.com/c0ntradicti0n/pdfetc2txt.git
 make_env pdfetc2txt
-git clone https://github.com/c0ntradicti0n/allennlp_vs_ampligraph.git
-make_env allennlp_vs_ampligraph
+git clone https://github.com/c0ntradicti0n/KnowledgeScience.git
+make_env KnowledgeScience
 
 git clone https://github.com/c0ntradicti0n/view_control_web.git
 make_mvn view_control_web 
@@ -38,6 +38,8 @@ make_mvn hal
 scp finn@roedel.etrap.eu:init_models/model_first.tar.gz  ./CorpusCook/server/models/
 scp finn@roedel.etrap.eu:init_models/model_over.tar.gz  ./CorpusCook/server/models/
 
+cp ../init_models/model_first.tar.gz  ./CorpusCook/server/models/
+cp ../init_models/model_over.tar.gz  ./CorpusCook/server/models/
 setup_tomcat.sh
 
 wget https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x1024_128_2048cnn_1xhighway/elmo_2x1024_128_2048cnn_1xhighway_weights.hdf5 -P ScienceMap/models/

@@ -1,1 +1,1 @@
-rm -rf C* S* a* h* v*
+rm -rf C* S* a* h* v* k* b*
