@@ -35,15 +35,20 @@ make_mvn view_control_web
 git clone https://github.com/c0ntradicti0n/hal.git
 make_mvn hal 
 
-scp finn@roedel.etrap.eu:init_models/model_first.tar.gz  ./CorpusCook/server/models/
-scp finn@roedel.etrap.eu:init_models/model_over.tar.gz  ./CorpusCook/server/models/
-
-cp ../init_models/model_first.tar.gz  ./CorpusCook/server/models/
-cp ../init_models/model_over.tar.gz  ./CorpusCook/server/models/
 setup_tomcat.sh
 
 wget https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x1024_128_2048cnn_1xhighway/elmo_2x1024_128_2048cnn_1xhighway_weights.hdf5 -P ScienceMap/models/
 wget https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x1024_128_2048cnn_1xhighway/elmo_2x1024_128_2048cnn_1xhighway_options.json -P ScienceMap/models/
+
+
+cp ../init_models/model_first.tar.gz  ./CorpusCook/server/models/
+cp ../init_models/model_over.tar.gz  ./CorpusCook/server/models/
+
+
+scp finn@roedel.etrap.eu:init_models/model_first.tar.gz  ./CorpusCook/server/models/
+scp finn@roedel.etrap.eu:init_models/model_over.tar.gz  ./CorpusCook/server/models/
+
+
 
 
 
