@@ -4,7 +4,7 @@ update(){
   cd ..
 }
 
-update(){
+update_mvn(){
   cd $1 
   git pull
   mvn package
