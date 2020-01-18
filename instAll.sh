@@ -1,3 +1,11 @@
+# https://wiki.ubuntuusers.de/Java/Installation/OpenJDK/#OpenJDK-8
+sudo apt-get install openjdk-8-jre 
+sudo apt-get install openjdk-8-jdk openjdk-8-demo openjdk-8-doc openjdk-8-jre-headless openjdk-8-source 
+sudo apt-get install maven
+sudo apt-get install pip3
+sudo apt-get install screen
+
+
 make_env(){
   cd $1 
   python3 -m venv venv
@@ -40,6 +48,9 @@ setup_tomcat.sh
 wget https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x1024_128_2048cnn_1xhighway/elmo_2x1024_128_2048cnn_1xhighway_weights.hdf5 -P ScienceMap/models/
 wget https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x1024_128_2048cnn_1xhighway/elmo_2x1024_128_2048cnn_1xhighway_options.json -P ScienceMap/models/
 
+cd  CorpusCookApp 
+pip install -r ../KnowledgeScience/requirements.txt
+cd ..
 
 cp ../init_models/model_first.tar.gz  ./CorpusCook/server/models/
 cp ../init_models/model_over.tar.gz  ./CorpusCook/server/models/
@@ -47,6 +58,9 @@ cp ../init_models/model_over.tar.gz  ./CorpusCook/server/models/
 
 scp finn@roedel.etrap.eu:init_models/model_first.tar.gz  ./CorpusCook/server/models/
 scp finn@roedel.etrap.eu:init_models/model_over.tar.gz  ./CorpusCook/server/models/
+
+
+
 
 
 
