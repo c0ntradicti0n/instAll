@@ -6,7 +6,8 @@ update(){
 
 update_mvn(){
   cd $1 
-  git pull  | grep -q 'Already up to date.' &&  mvn package
+  git pull  
+  mvn package
   cd ..
 }
  
