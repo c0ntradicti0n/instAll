@@ -25,6 +25,7 @@ update KnowledgeScience
 
 
 update_mvn view_control_web 
+cp view_control_web/app.config ./
 
 update_mvn hal 
 
