@@ -1,9 +1,14 @@
 # https://wiki.ubuntuusers.de/Java/Installation/OpenJDK/#OpenJDK-8
 sudo apt-get install openjdk-8-jre 
-sudo apt-get install openjdk-8-jdk openjdk-8-demo openjdk-8-doc openjdk-8-jre-headless openjdk-8-source 
+sudo apt-get install openjdk-8-jdk openjdk-8-demo openjdk-8-doc openjdk-8-jre-headless openjdk-8-source
+echo please switch to version java 8!
+sudo update-alternatives --config java 
 sudo apt-get install maven
 sudo apt-get install pip3
 sudo apt-get install screen
+sudo apt-get install xorg openbox
+
+
 
 
 make_env(){
