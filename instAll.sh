@@ -7,6 +7,7 @@ sudo apt-get install maven
 sudo apt-get install pip3
 sudo apt-get install screen
 sudo apt-get install xorg openbox
+sudo apt-get install xvfb
 
 
 
@@ -48,6 +49,7 @@ make_mvn view_control_web
 git clone https://github.com/c0ntradicti0n/hal.git
 make_mvn hal 
 
+sed -i 's|<Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>|<Connector connectionTimeout="20000" port="80" protocol="HTTP/1.1" redirectPort="8443"/>|g' apache-tomcat-9.0.30/conf/server.xml
 setup_tomcat.sh
 
 wget https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x1024_128_2048cnn_1xhighway/elmo_2x1024_128_2048cnn_1xhighway_weights.hdf5 -P ScienceMap/models/
@@ -63,6 +65,8 @@ cp ../init_models/model_over.tar.gz  ./CorpusCook/server/models/
 
 scp finn@roedel.etrap.eu:init_models/model_first.tar.gz  ./CorpusCook/server/models/
 scp finn@roedel.etrap.eu:init_models/model_over.tar.gz  ./CorpusCook/server/models/
+
+
 
 
 

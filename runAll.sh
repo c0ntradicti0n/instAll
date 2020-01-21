@@ -10,5 +10,9 @@ screen -S Doc -p 0 -X stuff 'cd pdfetc2txt && export PYTHONPATH=$PYTHONPATH:. &&
 screen -dmS Science
 screen -S Science -p 0 -X stuff 'cd ScienceMap && export PYTHONPATH=$PYTHONPATH:. && . venv/bin/activate && python rest_science_map.py\n'
 
+screen -dmS X
+screen -S X -p 0 -X stuff 'sudo startx\n'
+
+
 apache-tomcat-9.0.30/bin/startup.sh
 
