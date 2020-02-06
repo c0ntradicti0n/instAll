@@ -27,7 +27,8 @@ update KnowledgeScience
 
 update_mvn view_control_web 
 cp view_control_web/app.config ./
-cp view_control_web/target/CCpy4j-0.0.0.war apache-tomcat-9.0.30/webapps/
+cp view_control_web/target/corpuscow-0815.war
+ apache-tomcat-9.0.30/webapps/corpuscow.war
 
 update_mvn hal 
 
