@@ -1,4 +1,6 @@
 # https://wiki.ubuntuusers.de/Java/Installation/OpenJDK/#OpenJDK-8
+sudo apt-get update
+sudo apt-get upgrade
 sudo apt-get install openjdk-8-jre 
 sudo apt-get install openjdk-8-jdk openjdk-8-demo openjdk-8-doc openjdk-8-jre-headless openjdk-8-source
 echo please switch to version java 8!
@@ -8,7 +10,13 @@ sudo apt-get install pip3
 sudo apt-get install screen
 sudo apt-get install xorg openbox
 sudo apt-get install xvfb
-
+sudo apt-get install ffmpeg
+sudo apt-get  install docker.io
+sudo docker pull bwits/pdf2htmlex
+echo "alias pdf2htmlEX='sudo docker run -ti --rm -v `pwd`:/pdf bwits/pdf2htmlex pdf2htmlEX'" >> ~/.bashrc
+sudo groupadd docker
+sudo gpasswd -a $USER docker
+sudo service docker restart
 
 
 
@@ -70,6 +78,12 @@ cp ../init_models/model_over.tar.gz  ./CorpusCook/server/models/
 
 scp finn@roedel.etrap.eu:init_models/model_first.tar.gz  ./CorpusCook/server/models/
 scp finn@roedel.etrap.eu:init_models/model_over.tar.gz  ./CorpusCook/server/models/
+
+sudo adduser $USER www-data
+sudo chown -R www-data:www-data apache-tomcat-9.0.30/webapps
+sudo chmod -R g+w apache-tomcat-9.0.30/webapps
+
+
 
 
 
